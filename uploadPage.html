@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+		<style>
+			h1 {
+ 				<!-- text-align: center; -->
+ 				 font-size: 60px !important;
+			}
+			body {
+  				background-color: #FF3CAC;
+  				background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+				background-repeat: no-repeat;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+ 				 min-width: 100%;
+ 				 min-height: 100vh;
+			}
+		</style>
+		<h1 class="text-center">Content Based Image Retrieval</h1>
+		<title>Content Based Image Retreival</title>
+		
+	</head>
+	<body>
+		<form method="POST" enctype="multipart/form-data">  
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input type="submit">
+		</form>
+	</body>
+</html>
